@@ -24,6 +24,7 @@ class Solution2:
             t_dict[x] += 1
         return s_dict == t_dict
     
+
 class Solution3(object):
     def isAnagram(self, s: str, t: str) -> bool:
         from collections import Counter
