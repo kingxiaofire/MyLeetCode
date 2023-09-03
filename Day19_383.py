@@ -8,3 +8,4 @@ class Solution:
         for c in magazine:
             magazine_count[ord(c) - ord('a')] += 1
         return all(ransom_count[i] <= magazine_count[i] for i in range(26))
+    #all() 函数检查是否所有字符都满足勒索信的要求。
