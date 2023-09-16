@@ -2,7 +2,7 @@ class MyQueue:
 
     def __init__(self):
         """
-        in负责push，out负责pop
+        in负责push,out负责pop
         """
         self.stack_in = []
         self.stack_out = []
@@ -16,14 +16,14 @@ class MyQueue:
         if self.stack_out:
             return self.stack_out.pop()
         else:
-            for i in range(len(self.stack_in.pop())):
+            for i in range(len(self.stack_in)):
                 self.stack_out.append(self.stack_in.pop())
             return self.stack_out.pop()
 
 
     def peek(self) -> int:
-        ans = self.pop()
-        self.stack_out.append(ans)
+        ans = self.pop()#复用pop函数
+        self.stack_out.append(ans)#弹出后再装回去
         return ans
 
     def empty(self) -> bool:
