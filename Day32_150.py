@@ -12,4 +12,4 @@ class Solution:
                 op2 = stack.pop()
                 op1 = stack.pop()
                 stack.append(self.op_map[token](op1, op2))
-        return stack.pop()
+        return stack.pop()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
