@@ -1,9 +1,10 @@
-from Day27_459 import Solution
+from Day33_239 import Solution
 
 
 
 
 if __name__ == '__main__':
     Solution = Solution()
-    s = 'abcabcd'
-    print(Solution.repeatedSubstringPattern(s))
+    nums = [1,3,-1,-3,5,3,6,7]
+    k = 3
+    print(Solution.maxSlidingWindow(nums, k))
