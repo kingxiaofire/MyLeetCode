@@ -1,10 +1,9 @@
-from Day33_239 import Solution
+from Day36_144 import Solution
 
 
 
 
 if __name__ == '__main__':
     Solution = Solution()
-    nums = [1,3,-1,-3,5,3,6,7]
-    k = 3
-    print(Solution.maxSlidingWindow(nums, k))
+    root = [5,4,6,1,2]
+    print(Solution.preorderTraversal(root))
